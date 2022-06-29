@@ -1,0 +1,200 @@
+.main-wrapper {
+  background-color: #302F35;
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+
+header, nav, main, footer {
+  border: solid 3px #d32f2f; }
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px; }
+
+h1 {
+  font-family: 'Anek Odia', sans-serif;
+  font-weight: bold;
+  color: #6057c2;
+  padding-left: center; }
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #a2babc; }
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  color: brown; }
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  color: whitesmoke;
+  justify-content: center; }
+
+li a {
+  font-family: 'Anek Odia', sans-serif;
+  color: #d85656; }
+
+/* barra navegacion */
+.menu {
+  background-color: white; }
+  .menu ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: inline; }
+    .menu ul li a {
+      text-decoration: none;
+      margin: 10px;
+      padding: 10px 26px;
+      display: inline;
+      width: 100vh; }
+    .menu ul li a:hover {
+      background-color: antiquewhite; }
+
+.registro {
+  width: 450px;
+  background: #802828;
+  padding: 50px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 20px #000; }
+
+.control {
+  width: 100%;
+  background: #242424;
+  padding: 10px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #464658;
+  font-size: 20px; }
+
+.button {
+  width: 100%;
+  background: #181881;
+  border: none;
+  padding: 15px;
+  color: aliceblue;
+  margin: 15px; }
+
+th, td {
+  font-family: 'Anek Odia', sans-serif;
+  color: white;
+  padding: 30px;
+  align-items: center;
+  justify-content: center; }
+
+.logo {
+  border-radius: 50%;
+  padding: 20px;
+  width: 120px;
+  height: 120px; }
+
+.title {
+  border-style: solid;
+  border-color: white; }
+
+.card-text {
+  background-color: black; }
+
+section {
+  background-color: #222222;
+  background-size: 100px;
+  font-family: 'Anek Odia', sans-serif;
+  color: white; }
+
+.service {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: blanchedalmond;
+  padding: 30px; }
+
+.custom {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: auto; }
+
+@media screen and (max-width: 1024px) {
+  .main-wrapper {
+    flex: auto "header" "nav" "main" "footer"; }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly; }
+  nav {
+    display: inline-flex;
+    padding: 5px;
+    justify-content: space-between; }
+  nav .logo {
+    height: 15px 0px; }
+  main {
+    align-items: center;
+    justify-content: space-between; }
+  footer {
+    align-items: center;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    flex: auto "header" "nav" "main" "footer"; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-wrapper {
+    flex: auto "header" "nav" "main" "footer"; }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly; }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  nav .logo {
+    display: none; }
+  main {
+    display: block;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; } }
+
+.menu {
+  background-color: white; }
+
+.head-h1 {
+  font-size: 40px; }
+
+.head-h2 {
+  font-size: 25px; }
+
+.head-h3 {
+  font-size: 20px; }
